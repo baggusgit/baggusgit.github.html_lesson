@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+        var s = '';
+        var panjang = prompt('masukan nilai panjang');
+        var lebar = prompt('masukan nilai lebar');
+
+        function check(panjang, lebar){
+            for (var i = 1; i <=  panjang; i++){
+            for (var g = 1; g <= lebar; g++){
+                if (i % 2 == 0){
+                    if (g == 1){
+                    s += '* ';   
+                } else if (g == lebar){
+                    s+= '* ';
+                } else {
+                    s+= '= ';
+                }
+                } else {
+                    s += '* ';
+                }      
+            }
+            s += '\n';
+        }
+        console.log(s);
+        }
+        
+        check(panjang,lebar);
+        
+    </script>
+</body>
+</html>
